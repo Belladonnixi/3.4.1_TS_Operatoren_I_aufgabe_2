@@ -1,13 +1,12 @@
 void main() {
   // Gegebene Ticketnummer ohne Eingabe
-  const int ticketNumber = 47;
+  int ticketNumber = 47;
 
   // Anzahl der Sitzplätze pro Reihe
   const int seatsPerRow = 12;
 
   // Um die aufgabe mit einem if-else-Statement zu lösen, müsste die price-Variable vorher deklariert werden und nullable gemacht werden
-  // bei der Aufgabenstellung kann es dann auch ein final sein da es nur einmal initialisiert wird
-  //final int? price;
+  // int? price;
 
   // Reihe berechnen mit ganzzahliger Division
   int row = (ticketNumber - 1) ~/ seatsPerRow + 1;
