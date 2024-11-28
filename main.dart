@@ -19,13 +19,12 @@ void main() {
   // dazu müsste die price variabel vorher deklariert werden
   int price = (seat % 2 == 0) ? 15 : 12;
 
-  /* 
-  das wäre die Lösung mit einem if-else-Statement
-  if (seat % 2 == 0) {
-    price = 15;
-  } else {
-    price = 12;
-  } */
+  // das wäre die Lösung mit einem if-else-Statement
+  // if (seat % 2 == 0) {
+  //   price = 15;
+  // } else {
+  //   price = 12;
+  // }
 
   // Mehrzeiliger String mit Ticket-Informationen
   String ticketInfo = '''
