@@ -3,7 +3,10 @@ void main() {
   int ticketNumber = 47;
 
   // Anzahl der Sitzplätze pro Reihe
-  const int seatsPerRow = 12;
+  int seatsPerRow = 12;
+
+  ticketNumber = ticketNumber - 1;
+  seatsPerRow = seatsPerRow + 1;
 
   /*
     Um die aufgabe mit einem if-else-Statement zu lösen, müsste die price-Variable vorher deklariert werden und nullable gemacht werden, int fängt an bei 0, und
@@ -15,7 +18,7 @@ void main() {
 
     Reihe berechnen mit ganzzahliger Division
   */
-  int row = (ticketNumber - 1) ~/ seatsPerRow + 1;
+  int row = ticketNumber ~/ seatsPerRow;
 
   /* 
 
@@ -46,7 +49,7 @@ void main() {
 
     Zum Beispiel, wenn wir 47 Äpfel auf 12 Personen aufteilen möchten, erhalten jede Person 3 Äpfel und es bleiben 11 Äpfel übrig. Der Modulo-Operator gibt uns genau diese 11 übrig gebliebenen Äpfel zurück.
   */
-  int seat = (ticketNumber - 1) % seatsPerRow + 1;
+  int seat = ticketNumber % seatsPerRow;
 
   // Preis berechnen mit ternärem Operator, stattdesssen könnte auch eine if-else-Verzweigung verwendet werden wenn man noch keinen ternären Operator kennt
   // dazu müsste die price variabel vorher deklariert werden
